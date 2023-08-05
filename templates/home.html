@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI based Natural disaster analysis</title>
+        <style>
+            .A{
+                padding-top: 20px;
+                padding-left: 20px;
+                font-size:large;
+                background-color:antiquewhite;
+                border-radius: 10px;
+            }
+            .button {
+                background-color: #4CAF50; /* Green */
+                border-radius: 10px;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="A"><form>
+        <table width="100%"><tr><td><h2>AI based Natural disaster analysis</h2>
+        </td><td align="right"style="padding-bottom:17px;">   
+            
+            <a class="button"href="{{ url_for('home') }}">HOME</a>
+            <a class="button"href="{{ url_for('intro') }}">INTRO</a>
+            <a class="button"href="{{ url_for('predict') }}">OPEN WEBCAM</a>  </td></tr></table>
+        </div>
+        <table width="80%" align="center">
+            <tr><th><img height="290px"width="340px"src="{{ url_for('static', filename='cyclone.jpg') }}" alt="Cyclone"><br>CYCLONE</th>
+                <th><img height="290px"width="340px"src="{{ url_for('static', filename='earthquake.jpg') }}" alt="Earthquake"><br>EARTHQUAKE</th></tr>
+            <tr><th><img height="290px"width="340px" src="{{ url_for('static', filename='flood.jpg') }}" alt="Flood"><br>FLOOD</th>
+                <th><img height="290px"width="340px" src="{{ url_for('static', filename='wildfire.jpg') }}" alt="Wildfires"><br>WILDFIRES</th></tr>
+        </table>
+</body>
+</html>

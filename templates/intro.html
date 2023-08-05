@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI based Natural disaster analysis</title>
+    <style>
+        .A{
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size:large;
+            background-color:antiquewhite;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="A"><form>
+    <table width="100%"><tr><td><h2>AI based Natural disaster analysis</h2>
+    </td><td align="right"style="padding-bottom:17px;">   
+        
+        <a class="button"href="{{ url_for('home') }}">HOME</a>
+        <a class="button"href="{{ url_for('intro') }}">INTRO</a>
+        <a class="button"href="{{ url_for('predict') }}">OPEN WEBCAM</a>  </td></tr></table>
+    </div>
+    <h1><center>China, India and the United States are among the countries of the world most affected by natural disasters. <br>
+    Natural disasters have the potential to wreck and even end the lives of those people, <br>who stand in their way. However, whether or not you are likely to be <br>affected by a natural disaster greatly depends on where in the world you live, The objective of <br>the project is to human build a web application to detect the type of disaster. The input <br>is taken from the in built web cam, which in turn is given to the pre trained model. <br>The model predicts the type of disaster and displayed on UI.
+    </center></h1>
+</body>
+</html>
+
